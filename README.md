@@ -14,6 +14,14 @@ thor yardi_tools:extract_tenant URL TENANT_ID  # extracts a tenant information f
 
 ```
 
+## Cookies
+
+The code gains access to your Yardi instance using cookies from your browser.  To get cookies to provide to this tool, log into Voyager, find a network request for the page loaded and extract the cookies for that page by right clicking on the request and copying the request as a CURL command:
+
+![What is this](curl.png)
+
+Find the cookies header and save its value to a file called cookies.txt.
+
 ## Code to extract tenant IDs from Voyager
 
 Run a "Find Resident" search.  On the right, a box should pop up with all the tenants for the property.  List as many tenants as you can in the box (e.g. select 100 per page).
