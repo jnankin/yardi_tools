@@ -8,7 +8,7 @@ thor yardi_tools:extract_all_tenants URL       # extracts all tenants to a CSV o
   #example usage:
   #thor yardi_tools:extract_all_tenants "https://www.yardiasp14.com/PROPERTY_ID/pages/ResResident.aspx?ResidentId=TENANT_ID&sMessage="
 
-thor yardi_tools:extract_tenant URL TENANT_ID  # extracts a tenant information from a url and writes it to standard output
+thor yardi_tools:extract_tenant URL TENANT_ID  # extracts a tenant information from a url using tenant ids stored in a file called "tenant_ids.txt" and writes it to standard output
   #example usage:
   #thor yardi_tools:extract_tenant "https://www.yardiasp14.com/PROPERTY_ID/pages/ResResident.aspx?ResidentId=TENANT_ID&sMessage=" 1234
 
